@@ -14,3 +14,14 @@ You Can Do it , i see it in your eyes.
  <a href="#">Test</a>
  
  <a href="https://github.com/GMAGD"><img src="https://avatars3.githubusercontent.com/u/21009210?v=3&u=fd03585cf0b76cc91aaded1a692c4d2389307f32&s=400" alt="GMA"></a>
+ ```jsx
+class HelloMessage extends React.Component {
+  render() {
+    return <div>Hello {this.props.name}</div>;
+  }
+}
+
+ReactDOM.render(
+  <HelloMessage name="John" />,
+  document.getElementById('container')
+);
